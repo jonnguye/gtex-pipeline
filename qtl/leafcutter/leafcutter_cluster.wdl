@@ -31,7 +31,7 @@ task leafcutter_cluster {
     }
 
     runtime {
-        docker: "gcr.io/broad-cga-francois-gtex/leafcutter:latest"
+        docker: "quay.io/jonnguye/modified_leafcutter:1.0"
         memory: "${memory}GB"
         disks: "local-disk ${disk_space} HDD"
         cpu: "${num_threads}"
